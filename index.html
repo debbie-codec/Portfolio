@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+  name="description"
+  content="Portfolio of Agbaje D. Ebunoluwa, a web developer building responsive, user-friendly websites with HTML, CSS, and JavaScript. Explore projects, skills, and ways to get in touch."
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Ebun's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+<div class="logo">Ebun.</div>
+
+<ul>
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button class="resume-btn">Download Resume</button></li>
+</ul>
+
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="greeting">Hello, I'm</p>
+    <h1 class="hero-name">Ebun</h1>
+    <p class="hero-role">Web Developer & Student</p>
+    <p class="hero-bio">I build responsive, user-friendly websites and love turning ideas into real-world projects.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary">Download Resume <i class="fa-solid fa-download"></i></button>
+      <button class="btn-secondary">Contact Me</button>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/yourusername"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://instagram.com/yourusername"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:agbajedeborah04@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="images/ebun-website-image.jpeg" alt="Ebun">
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="illustration">
+    <img src="images/about_me-removebg-preview.png" alt="" class="img">
+  </div>
+
+  <div class="about-text">
+    <h1>About me</h1>
+    <p>I am Ebun, a software engineer and web developer. I enjoy building beautiful and functional web applications.</p>
+
+    <ul class="about-details">
+      
+      <li><i class="fa-solid fa-location-dot"></i> <span>Location: Nigeria</span></li>
+      <li><i class="fa-solid fa-envelope"></i> <span>Email: agbajedeborah04@gmail.com</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+      <p class="skill-name">HTML</p>
+      <div class="progress-row">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 90%;"></div>
+        </div>
+        <span class="skill-percent">90%</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+      <p class="skill-name">CSS</p>
+      <div class="progress-row">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 85%;"></div>
+        </div>
+        <span class="skill-percent">85%</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      <p class="skill-name">JavaScript</p>
+      <div class="progress-row">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 75%;"></div>
+        </div>
+        <span class="skill-percent">75%</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+      <p class="skill-name">Git</p>
+      <div class="progress-row">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 70%;"></div>
+        </div>
+        <span class="skill-percent">70%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+  <img src="images/hr-me.png" alt="HRme Landing, Login & Signup">
+  <div class="project-info">
+    <h3>HRme</h3>
+    <p>An HR software marketing site with landing page, login, and signup flows — includes full form validation and a login-to-dashboard redirect using sessionStorage.</p>
+    <a href="https://hr-website-nu.vercel.app/" class="view-btn">View Project</a>
+  </div>
+</div>
+
+    <div class="project-card">
+      <img src="images/corebank.png" alt="Corebank">
+      <div class="project-info">
+        <h3>Corebank</h3>
+        <p>A fully responsive banking website with a hero carousel, testimonials, and interactive cards.</p>
+        <a href="https://core-bank-rouge.vercel.app/" class="view-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/weather.png" alt="Expense Tracker">
+      <div class="project-info">
+        <h3>Weather Application</h3>
+        <p>A vanilla JavaScript app for tracking weather with localStorage persistence.</p>
+        <a href="https://classy-dango-341f0e.netlify.app/" class="view-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+  <img src="images/counter.png" alt="Counter App">
+  <div class="project-info">
+    <h3>Counter App</h3>
+    <p>A simple JavaScript counter app with increment, decrement, and reset functionality — built while practicing DOM manipulation and event listeners.</p>
+    <a href="m-counterapp.netlify.app" class="view-btn">View Project</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img src="images/calculator.png" alt="Calculator">
+  <div class="project-info">
+    <h3>Calculator</h3>
+    <p>A functional calculator handling basic arithmetic operations, built with vanilla JavaScript and clean event-driven logic.</p>
+    <a href="my-calculator-ap.netlify.app" class="view-btn">View Project</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img src="images/meal.png" alt="Meal Generator">
+  <div class="project-info">
+    <h3>Meal Generator</h3>
+    <p>An app that generates random meal ideas using the fetch() API, pulling live data from an external recipe API.</p>
+    <a href="my-meal-finder.netlify.app" class="view-btn">View Project</a>
+  </div>
+</div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Ebun's Portfolio. All Rights Reserved.</p>
+
+  <a href="#home" class="back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+</footer>
+
+</body>
+</html>
