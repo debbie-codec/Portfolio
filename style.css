@@ -597,6 +597,140 @@ header ul li button:hover {
     }
 }
 
+
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 90px 60px;
+    background-color: var(--color-bg-light);
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    max-width: 400px;
+}
+
+.contact-info h2 {
+    position: relative;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--color-text-heading);
+    padding-bottom: 14px;
+    margin-bottom: 16px;
+}
+
+.contact-info h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}
+
+.contact-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--color-text-body);
+    margin-bottom: 24px;
+}
+
+.contact-details {
+    list-style: none;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--color-text-heading);
+    margin-bottom: 14px;
+}
+
+.contact-details li i {
+    color: var(--color-primary);
+    width: 18px;
+}
+
+/* the form itself */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px 16px;
+    border: 1.5px solid #E0DDF0;
+    border-radius: 8px;
+    font-family: inherit; /* without this, inputs/textareas fall back to a default browser font, not Poppins */
+    font-size: 14px;
+    color: var(--color-text-heading);
+    outline: none; /* removes default blue browser focus outline, we style focus ourselves below */
+    transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--color-primary); /* purple border when the field is active */
+}
+
+.contact-form textarea {
+    resize: vertical; /* lets the user resize height only, not width, which would break the layout */
+}
+
+.contact-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 24px;
+        text-align: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-info h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact-details li {
+        justify-content: center;
+    }
+}
+
+
 /* ===== FOOTER ===== */
 footer {
     position: relative;
